@@ -1,0 +1,315 @@
+<section>
+
+<pre><code class="language-ruby">include OpenHack
+
+author = Presenter.new(:buren)
+slides = Hackathon::Slides.new
+
+wait until author.ready?
+
+author.present(slides) do |slide|
+  print slide
+  any_questions? if slide.last?
+end
+</code></pre>
+
+<p><em>Goto</em>: <a href="http://jacobburenstam.com/openhack-uppsala">http://jacobburenstam.com/openhack-uppsala</a></p>
+
+<p><img class="natural-image" src="images/justarrived-logo.png" style="max-width:400px"></p>
+
+</section>
+<section>
+
+<p><img class="natural-image" src="images/justarrived-logo.png" style="max-width:400px"></p>
+
+<p>Guide | Empower | Connect</p>
+
+</section>
+<section>
+
+<p>The mission of Just Arrived is to enrich and empower the labor market by guiding, empowering and connecting foreign-born competence with the staffing needs of Swedish companies.</p>
+
+</section>
+<section>
+
+<p>We envision ourselves being the most trusted  go to-place for all foreign-born in need of work.</p>
+
+</section>
+<section>
+
+<p>Built up by over 200 volunteers, representing 60 companies and authorities in Sweden, we now work with over 100 customers and have users from over 100 countries, speaking more than 80 different languages.</p>
+
+</section>
+<section>
+
+<p><img class="natural-image" src="images/job-card.png" style="max-width:400px"></p>
+
+</section>
+<section>
+
+<p><img class="natural-image" src="images/profile.png" style="max-width:400px"></p>
+
+</section>
+<section>
+
+<h1>GOTO</h1>
+
+<h2><a href="http://jacobburenstam.com/openhack-uppsala">jacobburenstam.com/openhack-uppsala</a></h2>
+
+</section>
+<section>
+
+<div data-poller="js-poll-developer-openhack">
+  <p>Developer?</p>
+  <button data-answer="">Neckbeard</button>
+  <button data-answer="">Ninja</button>
+  <button data-answer="">OK</button>
+  <button data-answer="">Not so much</button>
+  <button data-answer="">Developer?</button>
+  <hr>
+  <div data-chart="" data-refresh="5"></div>
+</div>
+
+</section>
+<section>
+
+<div data-poller="js-openhack-hackathon">
+  <p>How many hackathons have you been too?</p>
+  <button data-answer="">1</button>
+  <button data-answer="">2</button>
+  <button data-answer="">3</button>
+  <button data-answer="">4</button>
+  <button data-answer="">5+</button>
+  <hr>
+  <div data-chart="" data-refresh="5"></div>
+</div>
+
+</section>
+<section>
+
+<h1>I have a special relationship with OpenHack</h1>
+
+</section>
+<section>
+
+<h1>Malmö December, 2015</h1>
+
+<h3>First lines of code written for Just Arrived</h3>
+
+<h1>@ OpenHack</h1>
+
+</section>
+<section>
+
+<h3>Disclaimer</h3>
+
+<ul>
+  <li>
+<strong>Personal</strong> opinions, <strong>not</strong> the opinions of my employer.</li>
+  <li>YMMV (Your mileage may vary)</li>
+</ul>
+
+</section>
+<section>
+
+<h2>Jacob Burenstam</h2>
+
+<ul>
+  <li>Open source tinkerer</li>
+  <li>Useless code enthusiast</li>
+  <li>Co-Founder and CTO at Just Arrived</li>
+</ul>
+
+<hr>
+
+<ul>
+  <li><a href="https://github.com/buren">github.com/buren</a></li>
+  <li><a href="https://keybase.io/buren">keybase.io/buren</a></li>
+</ul>
+
+</section>
+<section>
+
+<h1>I love open source</h1>
+
+<p><img class="natural-image" src="images/github-profile.png" style="max-width:600px"></p>
+
+</section>
+<section>
+
+<h4>By the way</h4>
+
+<h1>Just Arrived is 100% open source <img class="emoji" alt=":heart:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2764.png">
+</h1>
+
+<p><a href="https://github.com/justarrived">github.com/justarrived</a></p>
+
+</section>
+<section>
+
+<h2>Access to information has changed the world</h2>
+
+</section>
+<section>
+
+<h2>Our challenge</h2>
+
+<p>How can I find more information and/or a guide on how I can get my first job i Sweden?</p>
+
+</section>
+<section>
+
+<h2>Fragmented information</h2>
+
+<p>Currently information for job seekers are spread out.</p>
+
+<p>Arbetsförmedlingen, Skatteverket, Migrationsverket, Försäkringskassan etc</p>
+
+</section>
+<section>
+
+<h3>Mission 1</h3>
+
+<p>Could the best guides and information be curated by harvesting insights from the many?</p>
+
+</section>
+<section>
+
+<h3>Mission 2</h3>
+
+<p>Also, is it possible to curate the best information from different authorities and institutions and present it in one place?</p>
+
+</section>
+<section>
+
+<h2>Bonus mission</h2>
+
+<p>Conceptualize how can users rate/vote/give feedback on content?</p>
+
+</section>
+<section>
+
+<h3>Constraints</h3>
+
+<p>We all believe in the web. It’s open, searchable, linkable and accessible in a way that native apps, frankly, are not</p>
+
+</section>
+<section>
+
+<p>Wikipedia/Stack Overflow for job seekers?</p>
+
+</section>
+<section>
+
+<p>Remember the code from the first slide?</p>
+
+<pre><code class="language-ruby">include OpenHack
+
+author = Presenter.new(:buren)
+slides = Hackathon::Slides.new
+
+wait until author.ready?
+
+author.present(slides) do |slide|
+  print slide
+  any_questions? if slide.last?
+end
+</code></pre>
+
+</section>
+<section>
+
+<pre><code class="language-ruby">DEADLINE = Time.new(2016, 5, 18, 19, 0, 0).freeze
+module OpenHack;end
+module OpenHack::Hackathon;end
+String.class_eval { define_method(:last?) { false } }
+NilClass.class_eval { define_method(:last?) { true } }
+define_method(:wait) { puts 'Still not ready..';sleep 3 }
+define_method(:any_questions?) { puts 'Any questions?' }
+define_method(:feedback) { puts 'Feedback?' }
+class OpenHack::Presenter &lt; Struct.new(:name)
+  define_method(:ready?) { Time.now &gt;= DEADLINE }
+  def present(slides); slides.to_a.each { |slide| yield(slide) };end
+end
+class OpenHack::Hackathon::Slides
+  define_method(:initialize) { @slides = File.read('slides.md').split('---') }
+  define_method(:to_a) { @slides + [nil] }
+end
+</code></pre>
+
+<p>This actually makes the previous code work <img class="emoji" alt=":trollface:" src="https://assets-cdn.github.com/images/icons/emoji/trollface.png"></p>
+
+</section>
+<section>
+
+<ul>
+  <li><a href="http://git.io/vnWsf">http://git.io/vnWsf</a></li>
+</ul>
+
+<p><img src="images/github-mark.png" alt="GitHub logo" class="octocat"></p>
+
+</section>
+<section>
+
+<h1>Build something awesome</h1>
+
+</section>
+<section>
+
+<h2>By the way we’re hiring</h2>
+
+<p><img class="natural-image" src="images/justarrived-logo.png" style="max-width:400px"></p>
+
+</section>
+<section>
+
+<p><img class="natural-image" src="images/justarrived-logo.png" style="max-width:400px"></p>
+
+<p>Guide | Empower | Connect</p>
+
+</section>
+<section>
+
+<p><img class="natural-image" src="images/justarrived-logo.png" style="max-width:400px"></p>
+
+</section>
+<section>
+
+<h1>Questions?</h1>
+
+<h2>github.com/buren</h2>
+<h2>github.com/justarrived</h2>
+
+<p><img class="natural-image" src="images/justarrived-logo.png" style="max-width: 300px;"></p>
+
+</section>
+<section>
+
+<p><img class="natural-image" src="images/justarrived-logo.png"></p>
+
+<!-- Third party dependencies -->
+<script src="js/libs/jquery.js"></script>
+
+<!-- <script src="js/libs/highcharts.js"></script> -->
+<script src="https://www.google.com/jsapi"></script>
+
+<script src="js/libs/chartkick.js"></script>
+
+<!-- JavaScript -->
+<script src="js/log.js"></script>
+
+<script src="js/resize-hack.js"></script>
+
+<script>
+  PollerConfig = { url: 'https://throwawaypoll.herokuapp.com' };
+</script>
+
+<script src="js/poller.js"></script>
+
+<script src="js/poller-dom.js"></script>
+
+<script>
+  PollerConfig = { url: 'https://throwawaypoll.herokuapp.com' };
+</script>
+
+</section>
