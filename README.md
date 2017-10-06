@@ -1,4 +1,4 @@
-# Agile growth - Slides
+# OpenHack Hackathon - Slides
 
 _Note_: The slides come with an open source server implementation. You can deploy it with one click over at [buren/poller-server](https://github.com/buren/poller-server), in a few minutes, without any additional configuration.
 
@@ -6,7 +6,7 @@ _Note_: The slides come with an open source server implementation. You can deplo
 
 ```bash
 gem install reveal-ck
-git clone git@github.com:buren/uppsala-openhack.git
+git clone git@github.com:buren/openhack-gothenburg.git
 
 # Compile presentation to slides/index.html
 reveal-ck generate

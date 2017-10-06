@@ -187,7 +187,7 @@ end
 ---
 
 ```ruby
-DEADLINE = Time.new(2016, 5, 18, 19, 0, 0).freeze
+DEADLINE = Time.new(2017, 10, 6, 18, 0, 0).freeze
 module OpenHack;end
 module OpenHack::Hackathon;end
 String.class_eval { define_method(:last?) { false } }
